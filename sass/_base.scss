@@ -1,0 +1,14 @@
+@mixin max-width($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin min-width($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+$red-color: #ff3147;
+$beige-color: #fafafa;

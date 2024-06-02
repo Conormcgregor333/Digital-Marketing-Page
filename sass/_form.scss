@@ -1,0 +1,111 @@
+@import "_base";
+.form {
+  /* position: fixed;
+  top: 30%;
+  left: 30%; */
+  z-index: 1000000000000000;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* top: 60%;
+  left: 30%; */
+  /*   right: 50%;
+ */
+  /*   transform: translate(-50%, -50%);
+ */
+  background-color: white;
+  opacity: 1;
+  height: 25rem;
+  width: 30rem;
+  @include max-width(530px) {
+    height: 28rem;
+    width: 20rem;
+    .first,
+    .second {
+      display: block;
+      margin-top: 1rem;
+    }
+  }
+  @include max-width(340px) {
+    height: 28rem;
+    width: 17rem;
+    .first,
+    .second {
+      display: block;
+      margin-top: 1rem;
+    }
+  }
+  border: rgb(215, 213, 213) 2px solid;
+  h2 {
+    margin-top: 3rem;
+    margin-left: 1.5rem;
+  }
+  .email {
+    margin-top: 2rem;
+    width: 100%;
+    input {
+      width: 90%;
+      display: block;
+      margin-inline: auto;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      border-bottom: 1.8px solid rgb(180, 177, 177);
+      font-size: 1.1rem;
+      padding-bottom: 0.5rem;
+    }
+  }
+  .name {
+    margin-top: 2rem;
+
+    width: 90%;
+    margin-inline: auto;
+    input {
+      margin-inline: auto;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      border-bottom: 1.8px solid rgb(180, 177, 177);
+      font-size: 1.1rem;
+      width: 10rem;
+      padding-bottom: 0.5rem;
+    }
+    .first-name {
+      margin-right: 6.5rem;
+    }
+  }
+  .check {
+    width: 90%;
+    margin-inline: auto;
+    margin-top: 2rem;
+    .chk {
+      margin-right: 0.5rem;
+    }
+  }
+  .sbmt-btn {
+    display: block;
+    width: 90%;
+    height: 4rem;
+
+    margin-inline: auto;
+    background-color: $red-color;
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  .cross {
+    display: block;
+    height: 1.5rem;
+    width: 1.5rem;
+    float: right;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+  }
+}

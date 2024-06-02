@@ -1,0 +1,56 @@
+@import "_base";
+.review-container {
+  background-color: $beige-color;
+
+  .review-cards {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-inline: auto;
+    @include max-width(700px) {
+      justify-content: center;
+      align-items: center;
+    }
+    .review-card {
+      @include max-width(700px) {
+        margin-top: 1rem;
+      }
+      width: 12rem;
+      height: 10rem;
+      background-color: white;
+      img {
+        display: block;
+        margin-inline: auto;
+        margin-top: 1rem;
+      }
+      .review-head {
+        text-align: center;
+        margin-top: 0.5rem;
+        font-size: 1.8rem;
+      }
+      .review {
+        text-align: center;
+        width: 10rem;
+        margin-inline: auto;
+        margin-top: 1rem;
+      }
+    }
+    .review-card:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 5px $red-color;
+      transition: 0.3s;
+    }
+  }
+}
+.growth {
+  text-align: center;
+  color: $red-color;
+}
+.growth-head {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}

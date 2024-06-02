@@ -1,0 +1,40 @@
+@import "_base";
+.targetCards {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  flex-wrap: wrap;
+
+  .targetcard {
+    img {
+      display: block;
+      margin-left: 20%;
+    }
+    margin-top: 1rem;
+    width: 13rem;
+    height: 13rem;
+    p {
+      width: 80%;
+      text-align: justify;
+    }
+    h4 {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      width: 95%;
+      margin-inline: auto;
+    }
+  }
+}
+.whyus {
+  text-align: center;
+  color: $red-color;
+  margin-top: 5rem;
+}
+.whybest {
+  text-transform: uppercase;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}

@@ -1,0 +1,594 @@
+.hero {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  margin-inline: auto;
+  margin-top: 7rem;
+}
+.hero .small-device {
+  display: none;
+}
+@media screen and (max-width: 930px) {
+  .hero {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .hero {
+    width: 90%;
+    margin-inline: 2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero .hero {
+    display: block;
+  }
+  .hero .h1,
+  .hero h3 {
+    text-align: center;
+    transform: translateX(10%);
+  }
+  .hero .txt {
+    margin-top: 2rem;
+    transform: translateX(10%);
+  }
+  .hero .hero-btn {
+    display: block;
+    margin-inline: auto;
+    transform: translateX(16%);
+  }
+  .hero .hero-img {
+    display: none;
+  }
+  .hero .small-device-container {
+    transform: translateX(10%);
+  }
+  .hero .small-device-container .small-device {
+    display: block;
+  }
+}
+.hero .big-device {
+  flex: 0.8;
+  display: block;
+  width: 20rem;
+  height: 30rem;
+  border-radius: 0.5rem;
+}
+.hero .hero-txt {
+  flex: 0.8;
+  margin-block: auto;
+}
+.hero .hero-txt h3 {
+  margin-bottom: 2rem;
+  color: #ff3147;
+}
+.hero .hero-txt .h1 {
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.hero .hero-txt .txt {
+  text-align: justify;
+  margin-bottom: 3rem;
+  font-size: 0.8rem;
+}
+.hero .hero-txt .hero-btn {
+  background-color: #ff3147;
+  color: white;
+  border: none;
+  height: 2rem;
+  width: 6rem;
+  border-radius: 0.2rem;
+  font-size: 0.65rem;
+  cursor: pointer;
+}
+
+.form {
+  /* position: fixed;
+  top: 30%;
+  left: 30%; */
+  z-index: 1000000000000000;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* top: 60%;
+  left: 30%; */
+  /*   right: 50%;
+  */
+  /*   transform: translate(-50%, -50%);
+  */
+  background-color: white;
+  opacity: 1;
+  height: 25rem;
+  width: 30rem;
+  border: rgb(215, 213, 213) 2px solid;
+}
+@media screen and (max-width: 530px) {
+  .form {
+    height: 28rem;
+    width: 20rem;
+  }
+  .form .first,
+  .form .second {
+    display: block;
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 340px) {
+  .form {
+    height: 28rem;
+    width: 17rem;
+  }
+  .form .first,
+  .form .second {
+    display: block;
+    margin-top: 1rem;
+  }
+}
+.form h2 {
+  margin-top: 3rem;
+  margin-left: 1.5rem;
+}
+.form .email {
+  margin-top: 2rem;
+  width: 100%;
+}
+.form .email input {
+  width: 90%;
+  display: block;
+  margin-inline: auto;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1.8px solid rgb(180, 177, 177);
+  font-size: 1.1rem;
+  padding-bottom: 0.5rem;
+}
+.form .name {
+  margin-top: 2rem;
+  width: 90%;
+  margin-inline: auto;
+}
+.form .name input {
+  margin-inline: auto;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1.8px solid rgb(180, 177, 177);
+  font-size: 1.1rem;
+  width: 10rem;
+  padding-bottom: 0.5rem;
+}
+.form .name .first-name {
+  margin-right: 6.5rem;
+}
+.form .check {
+  width: 90%;
+  margin-inline: auto;
+  margin-top: 2rem;
+}
+.form .check .chk {
+  margin-right: 0.5rem;
+}
+.form .sbmt-btn {
+  display: block;
+  width: 90%;
+  height: 4rem;
+  margin-inline: auto;
+  background-color: #ff3147;
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.form .cross {
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+  float: right;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.scrollableCards {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%;
+  width: 100%;
+  display: flex;
+  margin-left: 16rem;
+}
+@media screen and (max-width: 1300px) {
+  .scrollableCards {
+    margin-inline: auto;
+    width: 60%;
+  }
+}
+@media screen and (max-width: 930px) {
+  .scrollableCards {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .scrollableCards {
+    width: 90%;
+    margin-inline: 2rem;
+  }
+}
+.scrollableCards .card {
+  position: relative;
+  height: 20rem;
+  width: 15rem;
+  /*     border: 2px solid black;
+  */
+  flex: 0 0 auto;
+  margin: 1rem;
+}
+.scrollableCards .card img {
+  height: 100%;
+  width: 100%;
+}
+.scrollableCards .card-cover {
+  display: none;
+  position: absolute;
+  top: 0;
+  height: 20rem;
+  width: 15rem;
+  background-color: #ff3147;
+}
+.scrollableCards .card-cover h3 {
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+}
+.scrollableCards .card-cover div {
+  margin-top: 1rem;
+}
+.scrollableCards .card-cover p {
+  color: white;
+  margin-inline: 2rem;
+  font-size: 0.7rem;
+  text-align: center;
+}
+.scrollableCards .card-cover img {
+  display: block;
+  margin-inline: auto;
+  margin-top: 4rem;
+  height: 2rem;
+  width: 2rem;
+}
+.scrollableCards .card-cover a {
+  display: block;
+  margin-inline: auto;
+  margin-top: 2rem;
+  text-decoration: none;
+  width: 6rem;
+  height: 2rem;
+  color: #ff3147;
+  background-color: white;
+  font-size: 0.8rem;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+.threeDots {
+  display: flex;
+  margin-left: 16rem;
+}
+@media screen and (max-width: 420px) {
+  .threeDots {
+    margin-left: 10rem;
+  }
+}
+
+.dotimg {
+  transform: scale(0.6);
+}
+
+.dot {
+  height: 2rem;
+  width: 2rem;
+}
+
+.dot:hover {
+  border: 2px solid #ff3147;
+  border-radius: 1rem;
+}
+
+/* .service {
+   @include min-width(930px) {
+    margin-left: 19%;
+  }
+  @include min-width(700px) {
+    margin-left: 12%;
+  }
+  @include max-width(450px) {
+    display: none;
+  }
+
+  text-align: center;
+} */
+.card:hover .card-cover {
+  display: block;
+}
+
+.scrollableCards::-webkit-scrollbar {
+  width: 0;
+}
+
+.service-head {
+  color: #ff3147;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.service {
+  display: flex;
+  margin-top: 2rem;
+  width: 60%;
+  margin-inline: auto;
+}
+.service p {
+  width: 40%;
+  margin-left: 2rem;
+}
+.service h1 {
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .service {
+    display: none;
+  }
+}
+
+.targetCards {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  flex-wrap: wrap;
+}
+.targetCards .targetcard {
+  margin-top: 1rem;
+  width: 13rem;
+  height: 13rem;
+}
+.targetCards .targetcard img {
+  display: block;
+  margin-left: 20%;
+}
+.targetCards .targetcard p {
+  width: 80%;
+  text-align: justify;
+}
+.targetCards .targetcard h4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 95%;
+  margin-inline: auto;
+}
+
+.whyus {
+  text-align: center;
+  color: #ff3147;
+  margin-top: 5rem;
+}
+
+.whybest {
+  text-transform: uppercase;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  width: 60%;
+  margin-inline: auto;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+@media screen and (max-width: 700px) {
+  .main-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.main-container .bck {
+  /*     border: 2px solid black;
+  */
+  width: 70%;
+  height: 25rem;
+  background-image: url("https://34travel.me/media/upload/images/2017/june/japan-food/shutterstock_371217364-giappone.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.main-container .bcktxt-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 25rem;
+}
+.main-container .bcktxt {
+  width: 13rem;
+  height: 8rem;
+  background-color: #f6f6f6;
+}
+@media screen and (max-width: 700px) {
+  .main-container .bcktxt {
+    margin-top: 1rem;
+  }
+}
+.main-container .bcktxt h5 {
+  text-align: center;
+  margin-top: 1rem;
+}
+.main-container .bcktxt p {
+  margin-top: 1rem;
+  text-align: justify;
+  width: 70%;
+  margin-inline: auto;
+  font-size: 0.8rem;
+}
+.main-container .bcktxt:hover {
+  background-color: #ff3147;
+}
+.main-container .bcktxt:hover h5,
+.main-container .bcktxt:hover p {
+  color: white;
+}
+
+.project {
+  color: #ff3147;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 4rem;
+}
+
+.reason {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.review-container {
+  background-color: #fafafa;
+}
+.review-container .review-cards {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-inline: auto;
+}
+@media screen and (max-width: 700px) {
+  .review-container .review-cards {
+    justify-content: center;
+    align-items: center;
+  }
+}
+.review-container .review-cards .review-card {
+  width: 12rem;
+  height: 10rem;
+  background-color: white;
+}
+@media screen and (max-width: 700px) {
+  .review-container .review-cards .review-card {
+    margin-top: 1rem;
+  }
+}
+.review-container .review-cards .review-card img {
+  display: block;
+  margin-inline: auto;
+  margin-top: 1rem;
+}
+.review-container .review-cards .review-card .review-head {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 1.8rem;
+}
+.review-container .review-cards .review-card .review {
+  text-align: center;
+  width: 10rem;
+  margin-inline: auto;
+  margin-top: 1rem;
+}
+.review-container .review-cards .review-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 5px #ff3147;
+  transition: 0.3s;
+}
+
+.growth {
+  text-align: center;
+  color: #ff3147;
+}
+
+.growth-head {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.feedback h3 {
+  color: #ff3147;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 4rem;
+}
+.feedback h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.feedback .bigtxt {
+  position: relative;
+  width: 60%;
+  margin-inline: auto;
+  text-align: justify;
+}
+.feedback .bigtxt .quote {
+  display: block;
+  position: absolute;
+  font-size: 7rem;
+  left: -10px;
+  top: -3.5rem;
+  opacity: 0.3;
+}
+.feedback .ack {
+  width: 60%;
+  margin-inline: auto;
+  margin-top: 1rem;
+  color: gray;
+  font-size: 0.8rem;
+}
+.feedback .ack .name {
+  font-weight: bolder;
+  color: #ff3147;
+  font-size: 0.8rem;
+}
+
+.foot {
+  background-color: #ff3147;
+  margin-top: 4rem;
+}
+.foot img {
+  display: block;
+  width: 60%;
+  margin-inline: auto;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+}/*# sourceMappingURL=main.css.map */

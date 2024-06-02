@@ -1,0 +1,12 @@
+@import "_base";
+.foot {
+  background-color: $red-color;
+  margin-top: 4rem;
+  img {
+    display: block;
+    width: 60%;
+    margin-inline: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}

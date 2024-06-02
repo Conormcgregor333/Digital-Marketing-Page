@@ -1,0 +1,141 @@
+@import "_base";
+.scrollableCards {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%;
+  width: 100%;
+  display: flex;
+  margin-left: 16rem;
+  @include max-width(1300px) {
+    margin-inline: auto;
+    width: 60%;
+  }
+  @include max-width(930px) {
+    width: 80%;
+  }
+  @include max-width(700px) {
+    width: 90%;
+    margin-inline: 2rem;
+  }
+
+  .card {
+    position: relative;
+    height: 20rem;
+    width: 15rem;
+    /*     border: 2px solid black;
+ */
+    flex: 0 0 auto;
+    margin: 1rem;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .card-cover {
+    display: none;
+    position: absolute;
+    top: 0;
+    height: 20rem;
+    width: 15rem;
+    background-color: $red-color;
+    h3 {
+      color: white;
+      text-align: center;
+      margin-top: 1rem;
+    }
+    div {
+      margin-top: 1rem;
+    }
+    p {
+      color: white;
+      margin-inline: 2rem;
+      font-size: 0.7rem;
+      text-align: center;
+    }
+    img {
+      display: block;
+      margin-inline: auto;
+      margin-top: 4rem;
+      height: 2rem;
+      width: 2rem;
+    }
+    a {
+      display: block;
+      margin-inline: auto;
+      margin-top: 2rem;
+      text-decoration: none;
+      width: 6rem;
+      height: 2rem;
+      color: $red-color;
+      background-color: white;
+      font-size: 0.8rem;
+      text-align: center;
+      padding-top: 0.5rem;
+    }
+  }
+}
+.threeDots {
+  display: flex;
+  margin-left: 16rem;
+  @include max-width(420px) {
+    margin-left: 10rem;
+  }
+}
+.dotimg {
+  transform: scale(0.6);
+}
+.dot {
+  height: 2rem;
+  width: 2rem;
+}
+.dot:hover {
+  border: 2px solid $red-color;
+  border-radius: 1rem;
+}
+/* .service {
+   @include min-width(930px) {
+    margin-left: 19%;
+  }
+  @include min-width(700px) {
+    margin-left: 12%;
+  }
+  @include max-width(450px) {
+    display: none;
+  }
+
+  text-align: center;
+} */
+
+.card:hover {
+  .card-cover {
+    display: block;
+  }
+}
+.scrollableCards::-webkit-scrollbar {
+  width: 0;
+}
+
+.service-head {
+  color: $red-color;
+  margin-top: 5rem;
+  text-align: center;
+}
+.service {
+  display: flex;
+  margin-top: 2rem;
+  width: 60%;
+  margin-inline: auto;
+  p {
+    width: 40%;
+    margin-left: 2rem;
+  }
+  h1 {
+    text-align: center;
+  }
+
+  @include max-width(600px) {
+    display: none;
+  }
+}
